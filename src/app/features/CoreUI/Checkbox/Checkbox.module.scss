@@ -1,0 +1,43 @@
+@import "../variables";
+
+.checkboxButton {
+  width: 20px;
+  height: 20px;
+  border: 2px solid $gray-300;
+  cursor: pointer;
+
+  &.checked {
+    background: $blue-600;
+    border: 1px solid transparent;
+  }
+
+  &.hover {
+    background: $blue-600;
+    box-shadow: green($color: #000000);
+  }
+
+  &.disabled {
+    background: $white;
+    border-color: $gray-200;
+    cursor: initial;
+  }
+}
+
+.checkboxHandle {
+  &.checked {
+    margin: 1px 0 0 5px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  &.disabled {
+    background: $gray-200;
+  }
+}
+
+.input {
+  display: none;
+}
